@@ -16,8 +16,11 @@ namespace Ex1
             Car c2 = new Car();
 
             c1.Make = "Ford";
-
+            c1.Model = "Escort";
+            c1.CurrentSpeed = 80;
+            c1.EngineSize = 60;
             Console.WriteLine(c1.Make);
+            Console.WriteLine(c1.Model);
 
 
 

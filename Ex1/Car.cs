@@ -32,6 +32,14 @@ namespace Ex1
             get { return this.currentSpeed; }
             set { this.currentSpeed = value; }
         }
+
+        private int engineSize;
+
+        public int EngineSize
+        {
+            get { return this.engineSize; }
+            set { this.engineSize = value; }
+        }
     }
 
  
