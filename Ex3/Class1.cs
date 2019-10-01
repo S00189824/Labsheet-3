@@ -23,5 +23,17 @@ namespace Ex3
 
             balance = Balance;
         }
+
+        public void Deposit(double amount)
+        {
+            balance += amount;
+        }
+
+        public void Withdrawal(double amount)
+        {
+            balance -= amount;
+        }
+
+
     }
 }
