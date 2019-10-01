@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ex1
+namespace Ex2
 {
     class Car
     {
@@ -39,6 +39,28 @@ namespace Ex1
         {
             get { return this.engineSize; }
             set { this.engineSize = value; }
+        }
+
+        public void DisplayCarInfo()
+        {
+            Console.WriteLine($"Car Make : {Make}");
+            Console.WriteLine($"Car Model : {Model}");
+            Console.WriteLine($"Car Speed kph : {CurrentSpeed}");
+            Console.WriteLine($"Engine Size : {engineSize}");
+        }
+
+        public override string ToString()
+        {
+            return string.Format($"Car Make : {Make} " +
+                $"\nCar Model : {Model}" +
+                $"\nCar Speed : {CurrentSpeed}" +
+                $"\nCar Engine Size : {EngineSize}");
+        }
+
+        public void Accelerate()
+        {
+            CurrentSpeed += 10;
+            Console.WriteLine($"Current speed is : {CurrentSpeed}");
         }
     }
 
