@@ -16,6 +16,9 @@ namespace Ex3
             //Here i am creating two new bank account objects from a class.
             BankAccount acc2 = new BankAccount("123257960", "Mary Smith", 1000);
 
+            Console.WriteLine(acc1.AcccountDetails());
+            Console.WriteLine(acc2.AcccountDetails());
+
             Console.WriteLine("Add 500 to account 1");
             acc1.Deposit(500);
 

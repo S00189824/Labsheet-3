@@ -31,7 +31,15 @@ namespace Ex3
 
         public void Withdrawal(double amount)
         {
-            balance -= amount;
+            if (balance <= amount)
+                balance -= amount;
+        }
+
+        public string AcccountDetails()
+        {
+            return $"AccountNumber {accountNumber}" +
+                $"\nAccountHolder {accountHolder}" +
+                $"\nAccount Balance {balance:C}";
         }
 
 
